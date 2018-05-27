@@ -8,5 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
+// AooModule is the root of NgModule
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));

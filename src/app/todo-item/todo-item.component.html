@@ -1,0 +1,24 @@
+<div class="todo-item">
+    <div>
+        <input type="checkbox" class="todo-checkbox" [checked]="item.checked" (click)="completeItem() " />
+
+        <span class="todo-title " [ngClass]="{ 'todo-complete': isComplete} ">
+            {{ item.title }}
+        </span>
+
+        <!--  
+                    <span class="todo-title " [ngClass]="{ 'todo-complete': isComplete} ">
+            {{ item.title }}
+        </span>
+
+            
+            <input type="checkbox " class="todo-checkbox " [checked]="item.completed " (click)="completeItem() " />
+        <span class="todo-title " [ngClass]="{ 'todo-complete': item.completed} ">
+  {{ item.title }}
+</span> -->
+    </div>
+
+    <button class="btn btn-red " (click)="removeItem() ">
+      remove
+    </button>
+</div>

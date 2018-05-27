@@ -1,0 +1,41 @@
+<!--
+<p>
+    {{ title }}
+</p>
+<p>
+    {{ generateTitle() }}
+</p>
+-->
+
+<!-- Binding property to the input field in the template -->
+<!--
+  <input [value]="title">
+-->
+<!-- Binding method to the input field in the template -->
+<!--
+  <input [value]="generateTitle()">
+-->
+
+<!-- (keyup)="changeTitle('Character entered!')" -->
+<!-- <button (click)=" changeTitle( 'Button Clicked!') "> -->
+<!--
+
+  <div class="listitem">
+    <input [value]="title" (keyup.enter)="changeTitle($event)">
+    <button (click)=" changeTitle($event) ">
+      Save
+    </button> {{ title }}
+  </div>
+-->
+
+<!--
+<input #task [value]="title" (keyup.enter)="changeTitle($event.target.value)"> ​
+<button (click)="seeRef(task)">
+    Save
+  </button>
+-->
+
+<input class="todo-input" #task [value]="title" (keyup.enter)="submitValue($event.target.value)"> ​
+<button class="btn" (click)="submitValue(task.value)">
+    Save
+</button>
