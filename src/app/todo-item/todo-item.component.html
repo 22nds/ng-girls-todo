@@ -1,6 +1,6 @@
 <div class="todo-item">
     <div>
-        <input type="checkbox" class="todo-checkbox" [checked]="item.checked" (click)="completeItem() " />
+        <input type="checkbox" class="todo-checkbox" [checked]="item.completed" (click)="completeItem() " />
 
         <span class="todo-title " [ngClass]="{ 'todo-complete': isComplete} ">
             {{ item.title }}
