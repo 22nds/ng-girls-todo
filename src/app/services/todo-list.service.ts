@@ -28,8 +28,10 @@ export class TodoListService {
 
   addItem(item: TodoItem) {
     // var len = this.todoList.length + 1;
-    var timestamp = String(new Date().getTime())
-    var updatedItem = {title: item.title, id: timestamp, completed: false}
+    var timestamp : string
+    timestamp = String(new Date().getTime())
+    var updatedItem : TodoItem
+    updatedItem= {title: item.title, id: timestamp, completed: false}
     this.todoList.push(updatedItem);
     //this.storageService.setData(todoListStorageKey, this.todoList);
     this.saveList();
