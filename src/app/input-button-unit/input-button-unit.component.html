@@ -35,7 +35,5 @@
   </button>
 -->
 
-<input class="todo-input" #task [value]="title" (keyup.enter)="submitValue($event.target.value)"> ​
-<button class="btn" (click)="submitValue(task.value)">
-    Save
-</button>
+<input id="todo-input" class="todo-input" #task placeholder="Add a task" [value]="title" (keyup.enter)="submitValue($event.target.value);this.value='';"> ​
+<button class="btn" (click)="submitValue(task.value);">Save</button>

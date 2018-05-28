@@ -4,14 +4,7 @@ import { StorageService } from './storage.service';
 
 const todoListStorageKey = 'Todo_List';
 
-const defaultTodoList = [
-  { title: 'install NodeJS' },
-  { title: 'install Angular CLI' },
-  { title: 'create new app' },
-  { title: 'serve app' },
-  { title: 'develop app' },
-  { title: 'deploy app' },
-];
+const defaultTodoList = [];
 
 
 @Injectable()
@@ -34,7 +27,10 @@ export class TodoListService {
   }
 
   addItem(item: TodoItem) {
-    this.todoList.push(item);
+    // var len = this.todoList.length + 1;
+    var timestamp = String(new Date().getTime())
+    var updatedItem = {title: item.title, id: timestamp, completed: false}
+    this.todoList.push(updatedItem);
     //this.storageService.setData(todoListStorageKey, this.todoList);
     this.saveList();
   }

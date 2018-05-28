@@ -27,7 +27,7 @@ export class InputButtonUnitComponent implements OnInit {
   */
   
   constructor() { 
-    this.title = 'Hello World';   // #1
+    this.title = '';   // #1
    // this.changeTitle('My First Angular App'); // #4
    //  console.log(this.title);
   }
@@ -52,6 +52,8 @@ export class InputButtonUnitComponent implements OnInit {
   submitValue(newTitle : string) {
     // this.title = newTitle;
     this.submit.emit(newTitle);
+    // clear input field
+    document.getElementById("todo-input").value = '';
   }
 
   // seeRef(inputElementReference) {

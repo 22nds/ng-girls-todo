@@ -1,24 +1,23 @@
 <div class="todo-item">
     <div>
-        <input type="checkbox" class="todo-checkbox" [checked]="item.completed" (click)="completeItem() " />
-
-        <span class="todo-title " [ngClass]="{ 'todo-complete': isComplete} ">
+        <span class="squaredFour">
+            <input type="checkbox" id="{{item.id}}" class="squaredFour todo-checkbox" [checked]="item.completed" (click)="completeItem()" />
+            <label for="{{item.id}}"></label>
+        </span>
+        <span class="todo-title" [ngClass]="{ 'todo-complete': isComplete} ">
             {{ item.title }}
         </span>
 
         <!--  
-                    <span class="todo-title " [ngClass]="{ 'todo-complete': isComplete} ">
+        <span class="todo-title " [ngClass]="{ 'todo-complete': isComplete} ">
             {{ item.title }}
         </span>
-
-            
             <input type="checkbox " class="todo-checkbox " [checked]="item.completed " (click)="completeItem() " />
         <span class="todo-title " [ngClass]="{ 'todo-complete': item.completed} ">
-  {{ item.title }}
-</span> -->
+            {{ item.title }}
+        </span> -->
     </div>
 
-    <button class="btn btn-red " (click)="removeItem() ">
-      remove
-    </button>
+    <div class="delete" (click)="removeItem() ">
+        <i class="material-icons">delete_outline</i></div>
 </div>

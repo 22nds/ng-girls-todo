@@ -19,7 +19,13 @@ li {
     font-size: 16px;
     line-height: 22px;
     color: #404040;
-    font-family: 'Lucida Grande', Verdana, sans-serif;
+}
+
+body {
+    background: #3498db;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
 }
 
 ​ ol,
@@ -44,19 +50,14 @@ ul {
     background: lightslategrey;
 }
 
-​ .btn-red {
-    background: red;
-}
-
-​ .btn-red:hover {
-    background: darkred;
-}
-
 h1 {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 20px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     font-weight: bold;
     text-align: center;
     letter-spacing: -0.8px;
+    color: white;
+    font-family: 'Bowlby One SC', cursive;
+    letter-spacing: 0.2em
 }

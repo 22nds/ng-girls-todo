@@ -12,6 +12,6 @@ import { TodoItem } from './interfaces/todo-item';
 
 export class AppComponent {
 
-  title = 'My TODO list app';
-  userLoggedIn = true;  /// changes admin view
+  title = 'TODO | DONE';
+  userLoggedIn = false;  /// changes admin view
 }

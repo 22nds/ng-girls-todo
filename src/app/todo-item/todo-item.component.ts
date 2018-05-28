@@ -22,6 +22,7 @@ export class TodoItemComponent implements OnInit {
 
   completeItem() {
    this.isComplete = !this.isComplete;
+   this.item.completed= this.isComplete;
   }
 
   removeItem() {
