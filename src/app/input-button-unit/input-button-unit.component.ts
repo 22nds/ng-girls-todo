@@ -53,7 +53,7 @@ export class InputButtonUnitComponent implements OnInit {
     // this.title = newTitle;
     this.submit.emit(newTitle);
     // clear input field
-    document.getElementById("todo-input").value = '';
+    // document.getElementById("todo-input").value = '';
   }
 
   // seeRef(inputElementReference) {
